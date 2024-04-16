@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get '/cv', to: 'pages#cv', as: 'cv'
   get '/projects', to: 'pages#projects', as: 'projects'
   get '/contact', to: 'pages#contact', as: 'contact'
-  get '/degree', to: 'pages#degree', as: 'degree'
+  get '/degrees', to: 'pages#degrees', as: 'degrees'
 end
