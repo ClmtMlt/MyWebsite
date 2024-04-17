@@ -1,21 +1,22 @@
 .navbar {
   background: white;
-  width: 100vw;
   justify-content: center;
-  height: 100px;
+  height: 10vh;
   text-align: center;
 
   .navbar-content {
-    width: 50%;
-
-    .nav-item {
-      height: 70%;
-      width: 13%;
-    }
 
     a:hover {
       font-weight: 700;
-      font-size: larger;
+      background: blue;
+      transition: ease 0.5s;
     }
   }
+}
+
+#test-btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+  background: red;
 }
