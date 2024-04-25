@@ -20,6 +20,17 @@
   </div>
 
   <div class="new-contact-body">
+    <%= simple_form_for(@contact) do |f| %>
+      <%= f.input :name, label: false, placeholder: "Tony Blair" %>
+      <%= f.input :email, label: false, placeholder: "example@gmail.com" %>
+      <%= f.input :phone_number, label: false, placeholder: "+33123456789" %>
+      <%= f.input :brand, label: false, placeholder: "Tommy Hilfiger" %>
+      <%= f.input :website, label: false, placeholder: "www.google.com" %>
+      <%= f.input :product, as: :radio_buttons, collection: Contact::PRODUCT %>
+      <%= f.input :description, label: false, as: :text, placeholder: "Description" %>
+      <%= f.input :known, as: :radio_buttons, label: false, collection: Contact::SOCIAL %>
+      <%= f.submit "Send" %>
+    <% end %>
   </div>
 
   <div class="new-contact-footer">

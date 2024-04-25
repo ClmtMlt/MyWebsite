@@ -6,6 +6,7 @@ class CreateContacts < ActiveRecord::Migration[7.1]
       t.string :phone_number
       t.string :brand
       t.string :website
+      t.string :product
       t.string :description
       t.string :known
 

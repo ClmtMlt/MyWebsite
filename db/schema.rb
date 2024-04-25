@@ -17,6 +17,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_25_205956) do
     t.string "phone_number"
     t.string "brand"
     t.string "website"
+    t.string "product"
     t.string "description"
     t.string "known"
     t.datetime "created_at", null: false
