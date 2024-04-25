@@ -1,0 +1,47 @@
+.contact-close {
+  width: 90vw;
+  height: 10vh;
+
+  a {
+    color: $two;
+    font-size: 50px;
+    float: right;
+  }
+
+  a:hover {
+    color: $one;
+  }
+}
+
+.new-contact-block {
+  width: 100vw;
+
+  .new-contact-header {
+    width: 50%;
+
+    .header-header {
+      h3 {
+        color: $two;
+        font-size: 40px;
+      }
+
+      #highlight {
+        color: $one;
+        margin-left: 7px;
+        font-size: 45px;
+      }
+    }
+
+    .header-body {
+
+    }
+  }
+
+  .new-contact-body {
+
+  }
+
+  .new-contact-footer {
+
+  }
+}
