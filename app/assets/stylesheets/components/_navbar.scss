@@ -3,20 +3,33 @@
   justify-content: center;
   height: 10vh;
   text-align: center;
+  font-size: 20px;
 
   .navbar-content {
 
+    a {
+      color: $two;
+      font-weight: 500;
+    }
+
     a:hover {
-      font-weight: 700;
-      background: blue;
-      transition: ease 0.5s;
+      color: $one;
+      transition: 0s ease;
     }
   }
 }
 
-#test-btn {
-  padding: 5px;
+#contact-btn {
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
-  border: 1px solid red;
-  background: red;
+  border: 1px solid $two;
+  background: $two;
+  color: white;
+  font-weight: 700;
+}
+
+#contact-btn:hover {
+  background: $one;
+  border: 1px solid $one;
+  transition: 0.35s ease;
 }
