@@ -7,10 +7,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save!
       redirect_to contacts_path
-      flash[:notice] = "Your messsage has been sent!"
+      flash[:notice] = 'Your messsage has been sent!'
     else
       render :new, status: :unprocessable_entity
-      flash[:error] = "Your message has not been sent, please try again..."
+      flash[:error] = 'Your message has not been sent, please try again...'
     end
   end
 
