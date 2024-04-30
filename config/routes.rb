@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get '/projects', to: 'pages#projects', as: 'projects'
   get '/contacts', to: 'contacts#index', as: 'contacts'
   get '/about-me', to: 'pages#about_me', as: 'about_me'
+  post '/contacts', to: 'contacts#create', as:'contacts_create'
 end
